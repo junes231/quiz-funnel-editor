@@ -1,0 +1,1 @@
+const password = prompt('Enter password:'); if (password !== 'hersupps2025') { document.body.innerHTML = 'Access Denied'; }

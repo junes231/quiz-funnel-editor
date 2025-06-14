@@ -1,3 +1,1 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Editor Loaded');
-});
+console.log('Editor Loaded');

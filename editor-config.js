@@ -1,7 +1,1 @@
-// Placeholder config for future extensions
-const defaultConfig = {
-  version: "A",
-  backgroundColor: "#dda0dd",
-  buttonColor: "green",
-  questions: []
-};
+const config = { version: 'A', questions: [{ q: 'What do you prefer?', a: ['Option 1', 'Option 2', 'Option 3', 'Option 4'] }] };
