@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Quiz Funnel Editor</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Funnel Editor</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1>Quiz Funnel Editor</h1>
-<script src="password-protect.js"></script>
-<script src="editor-config.js"></script>
-<script src="quiz-exporter.js"></script>
-<script src="script.js"></script>
+  <div id="loginScreen">
+    <h2>Enter Password to Access</h2>
+    <input type="password" id="passwordInput" placeholder="Password" />
+    <button onclick="checkPassword()">Login</button>
+  </div>
+
+  <div id="editor" style="display: none;">
+    <h1>Quiz Funnel Editor</h1>
+
+    <label>Choose Version:</label>
+    <select id="funnelVersion">
+      <option value="A">Version A (with email)</option>
+      <option value="B">Version B (direct redirect)</option>
+    </select>
+
+    <label>Background Color:</label>
+    <input type="color" id="bgColor" value="#f8d7ec"/>
+
+    <label>Button Color:</label>
+    <input type="color" id="btnColor" value="#4CAF50"/>
+
+    <div id="questionsContainer"></div>
+    <button onclick="addQuestion()">Add Question</button>
+
+    <label>Final Redirect Link:</label>
+    <input type="text" id="redirectLink" placeholder="https://your-affiliate-link.com"/>
+
+    <br><br>
+    <button onclick="generateHTML()">Export HTML</button>
+    <a id="downloadLink" style="display:none;">Download</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
