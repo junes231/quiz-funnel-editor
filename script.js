@@ -1,1 +1,1 @@
-console.log("Quiz Funnel Editor loaded.");
+console.log('Quiz Funnel Editor loaded');
